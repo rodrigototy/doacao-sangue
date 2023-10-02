@@ -1,0 +1,303 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Estilos para o corpo da página */
+body {
+  font-family: Inter, Arial, sans-serif;
+}
+
+html,
+body {
+  min-width: 300px; /* Defina a largura mínima desejada em pixels */
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  background-color: #d9d9d9;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+/* Estilos para a div que contém title */
+.form-title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-self: center;
+  text-align: center;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.form-column {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+/* Estilos para a div que contém logo e form */
+.flex-form {
+  display: flex;
+  background-color: #c95e5e;
+}
+
+/* Estilos para a tag aside (30% da largura) */
+.logo_form {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  top: 0px;
+  left: 0px;
+  max-width: 300px;
+  max-height: 600px;
+}
+
+/* Estilos para o formulário */
+form {
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-left: 1px solid #ccc;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* Estilos para rótulos e campos de entrada */
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+select,
+textarea {
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+/* Estilo para os botões */
+input[type="button"],
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  height: 100%;
+  width: 25%;
+}
+
+input[type="button"] {
+  background-color: #d9d9d9;
+  color: black;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+input[id="nome"] {
+  width: 90%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.logo_button {
+  max-width: 25%;
+  border-radius: 10px;
+}
+
+input[id="endereco"] {
+  width: 90%;
+}
+
+textarea[id="comorbidades"] {
+  width: 80%;
+}
+
+input[id="data_nascimento"] {
+  width: 80%;
+}
+
+input[id="cpf"] {
+  width: 80%;
+}
+
+input[id="cidade"] {
+  width: 90%;
+}
+
+select[id="estado"] {
+  width: 70%;
+}
+
+input[id="cep"] {
+  width: 50%;
+}
+
+input[id="telefone"] {
+  width: 70%;
+}
+
+select[id="tipo_sanguineo"] {
+  width: 60%;
+}
+
+select[id="fator_rh"] {
+  width: 60%;
+}
+
+/* Estilos para elementos responsivos */
+@media (max-width: 940px) {
+  input[type="button"],
+  input[type="submit"] {
+    font-weight: 300;
+    padding: 5px 15px;
+  }
+}
+
+@media (max-width: 860px) {
+  .logo {
+    max-width: auto;
+    max-height: 50px;
+  }
+
+  .logo_button {
+    height: auto;
+  }
+
+  .form-row {
+    margin: 5px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="tel"],
+  select,
+  textarea {
+    font-size: 12px;
+  }
+
+  .logo_form {
+    display: none;
+  }
+
+  .form-title {
+    font-size: small;
+  }
+}
+
+@media (max-width: 620px) {
+  .logo {
+    display: none;
+  }
+
+  input[type="button"],
+  input[type="submit"] {
+    font-size: 14px;
+    padding: 5px 10px;
+    width: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-title {
+    font-size: x-small;
+  }
+
+  .logo,
+  .logo_button {
+    display: none;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="tel"],
+  select,
+  textarea {
+    padding: 2px;
+    margin-bottom: 2px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+
+  input[type="button"],
+  input[type="submit"] {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 440px) {
+  .form-title {
+    font-size: xx-small;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  input[type="button"],
+  input[type="submit"] {
+    font-size: 12px;
+  }
+
+  .form-column {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+  }
+
+  .form-row {
+    padding-left: 20px;
+    align-self: flex-start;
+  }
+}
