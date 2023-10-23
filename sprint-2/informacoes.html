@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tela de Informações</title>
+    <link rel="stylesheet" href="/sprint-3/static/styles/style_informações.css">
   </head>
   <body>
-    <header id="cabeçalho">
-      <h1>Informações</h1>
-      <nav id="menu">
-        <ul type="disc">
-          <a href="index.html"><li>Inicio</li></a>
+    <header>
+      <h1 id="cabeçalho">Informações</h1>
+      <nav>
+        <ul id="lista">
+          <a href="index.html"><li >Inicio</li></a>
           <a href="cadastro.html"><li>Cadastros</li></a>
           <a href="login.html"><li>Login</li></a>
           <a href="contato.html"><li>Contatos</li></a>
@@ -19,6 +20,7 @@
     </header>
     <main id="corpo">
       <h1>Impedimentos Temporários</h1>
+      <div>
       <h2>
         Covid-19 - Inaptidão à doação de sangue e componentes para aqueles que
         receberem as vacinas autorizadas abaixo:
@@ -45,7 +47,9 @@
         <li>Vacina da gripe há menos de 48 horas.</li>
         <li>Precisa aguardar 48h após tomar a vacina do HPV.</li>
       </ul>
-      <h1>Impedimentos definitivos:</h1>
+    </div> 
+      <h1>Impedimentos definitivos</h1>
+      <div>
       <ul>
         <li>Malárias ou doença de Chagas.</li>
         <li>Hepatite após os 11 anos de idade.</li>
@@ -57,7 +61,9 @@
         </li>
         <li>Histórico de câncer (exceto carcinoma basocelular).</li>
       </ul>
+    </div>
       <h1>Requisitos Para Doar</h1>
+     <div>
       <ul>
         <li>Estar em boas condições de saúde</li>
         <li>
@@ -74,24 +80,69 @@
         </li>
         <li>Não fumar pelo menos duas horas antes da doação.</li>
       </ul>
+    </div> 
       <h1>BENEFICIOS DE DOAR SANGUE</h1>
-      <ul type="disc1">
+      <ul class="info">
         <p>DIA DE FOLGA</p>
         <p>CHECK UP GRATUITO</p>
-        <p>AUDAR QUEM PRECISA</p>
+        <p>AJUDAR QUEM PRECISA</p>
       </ul>
-      <img
-        id="tabela"
-        src="imagens/tabeladesangue.jpg"
-        alt="tabela"
-        height="200"
-        width="600"
-      />
+      
+      <table>
+        <tr class="dados">
+          <td>tipos Sanguineos</td>
+          <td>Pode Doar Para</td>
+          <td>Pode Receber De</td>
+        </tr>
+        <tr>
+          <td>A+</td>
+          <Td>A+,AB+</Td>
+          <Td>A+,A-,O+,0-</Td>
+        </tr>
+        <tr>
+          <td>A-</td>
+          <td>A+,A-,AB+,AB-</td>
+          <td>A-,O-</td>
+        </tr>
+        <tr>
+          <td>B+</td>
+          <td>B-,AB+</td>
+          <td>B+,B-,O+,O-</td>
+        </tr>
+        <tr>
+          <td>B-</td>
+          <td>B+,B-,AB+,AB-</td>
+          <td>B-,O-</td>
+        </tr>
+        <tr>
+          <td>AB+</td>
+          <td>AB+</td>
+          <td>Todos os tipos</td>
+        </tr>
+        <tr>
+          <td>AB-</td>
+          <td>AB+,AB-</td>
+          <td>A-,B-,AB-,O-</td>
+        </tr>
+        <tr>
+          <td>O+</td>
+          <td>A+,B+,AB+,O+</td>
+          <td>O+,O-</td>
+        </tr>
+        <tr>
+          <td>O-</td>
+          <td>Todos os tipos</td>
+          <td>O-</td>
+        </tr>
+      </table>
+    
     </main>
     <footer>
+      <nav>
       <a href="">Políticas</a>
       <a href="">Redes Socias</a>
       <p>Fundação Doe Sangue&copy;</p>
+    </nav>
     </footer>
   </body>
 </html>
