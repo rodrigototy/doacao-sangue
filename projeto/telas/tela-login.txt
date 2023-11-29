@@ -1,5 +1,0 @@
-Tela de Login
-
-Uma tela de login, onde você pode acessar sua conta no site, ver seu histórico de doações ou recebimentos de sangue, editar seus dados, etc.
-Para essa tela, eu sugiro usar um fundo branco para dar uma sensação de limpeza e clareza.
-No topo da tela, eu sugiro repetir o mesmo logo e o mesmo menu das telas anteriores
