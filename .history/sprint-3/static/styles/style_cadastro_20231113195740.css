@@ -1,0 +1,490 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*
+  border: 1px solid black;  */
+}
+
+ul {
+  list-style: none;
+}
+
+/* Estilos para o corpo da página */
+body {
+  font-family: Inter, Arial, sans-serif;
+}
+
+html,
+body {
+  min-width: 300px; /* Defina a largura mínima desejada em pixels */
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  background-color: #d9d9d9;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+/* Estilos para a div que contém title */
+.form-title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-self: center;
+  text-align: center;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.form-column {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+/* Estilos para a div que contém logo e form */
+.flex-form {
+  display: flex;
+  background-color: #c95e5e;
+}
+
+/* Estilos para a tag aside (30% da largura) */
+.logo_form {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  top: 0px;
+  left: 0px;
+  max-width: 300px;
+  max-height: 600px;
+}
+
+.half-cell-60 {
+  width: 60%;
+}
+
+.half-cell-50 {
+  width: 50%;
+}
+
+.half-cell-40 {
+  width: 40%;
+}
+
+.half-cell-30 {
+  width: 30%;
+}
+
+.half-cell-20 {
+  width: 20%;
+}
+
+.half-cell-15 {
+  width: 15%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.logo_button {
+  max-width: 25%;
+  border-radius: 10px;
+}
+
+.check-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.check-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  gap: 0.5rem;
+}
+
+.check-item label {
+  margin: 0;
+}
+
+/* Estilos para o formulário */
+form {
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-left: 1px solid #ccc;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+fieldset {
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+}
+
+/* Estilos para rótulos e campos de entrada */
+label,
+legend {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+select,
+textarea {
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+/* Estilo para os botões */
+input[type="button"],
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  height: 100%;
+  width: 25%;
+}
+
+input[type="button"] {
+  background-color: #d9d9d9;
+  color: black;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Estilos para elementos responsivos */
+@media (max-width: 1100px) {
+  .form-row {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .logo_form {
+    width: 25%;
+  }
+
+  input[type="button"],
+  input[type="submit"] {
+    font-weight: 300;
+    padding: 5px 15px;
+  }
+}
+
+@media (max-width: 980px) {
+  .logo {
+    max-width: auto;
+    max-height: 50px;
+  }
+
+  .logo_button {
+    height: auto;
+  }
+
+  .form-row {
+    margin: 5px;
+  }
+
+  .buttons {
+    margin-top: 20px;
+  }
+
+  label,
+  legend {
+    font-size: 16px;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="tel"],
+  select,
+  textarea {
+    font-size: 12px;
+  }
+
+  .logo_form {
+    display: none;
+  }
+
+  .form-title {
+    font-size: small;
+  }
+
+  form {
+    padding: 1rem 3rem 1rem 2rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .logo {
+    display: none;
+  }
+
+  .form-row {
+    padding: 0 2px;
+  }
+
+  input[type="button"],
+  input[type="submit"] {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  label,
+  legend {
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 620px) {
+  .sub-grupo-2 {
+    flex-direction: column;
+    align-self: stretch;
+  }
+}
+
+@media (max-width: 580px) {
+  .form-title {
+    font-size: x-small;
+  }
+
+  .logo,
+  .logo_button {
+    display: none;
+  }
+
+  .form-row {
+    padding: 0;
+    align-self: flex-start;
+  }
+
+  .check-column {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .check-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .check-item {
+    width: auto;
+    align-items: center;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="tel"],
+  select {
+    padding: 2px;
+    margin-bottom: 2px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+
+  input[type="button"],
+  input[type="submit"] {
+    font-size: 14px;
+    padding: 5px 10px;
+    width: 30%;
+  }
+}
+
+@media (max-width: 540px) {
+  .form-row {
+    margin: 2px;
+    padding: 0 2px;
+  }
+
+  .sub-grupo-2 {
+    flex-direction: column;
+    align-self: stretch;
+  }
+
+  .buttons {
+    margin-top: 15px;
+  }
+
+  form {
+    padding: 1rem 2rem 1rem 1rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .sub-grupo-4 {
+    flex-direction: column;
+    align-self: stretch;
+  }
+}
+
+@media (max-width: 440px) {
+  .form-title {
+    font-size: xx-small;
+  }
+
+  .sub-grupo-1,
+  .sub-grupo-6 {
+    flex-direction: column;
+    align-self: stretch;
+  }
+
+  .check-column {
+    flex-direction: column;
+    padding-left: 1.5rem;
+  }
+
+  label,
+  legend {
+    font-size: 12px;
+  }
+
+  input[type="button"],
+  input[type="submit"] {
+    font-size: 12px;
+    width: 35%;
+  }
+}
+
+@media (max-width: 320px) {
+  .sub-grupo-3,
+  .sub-grupo-5 {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+  }
+
+  input[type="button"],
+  input[type="submit"] {
+    width: 40%;
+  }
+}
+
+/* ---------- Estilos dinâmicos ---------- */
+
+.helper-text {
+  display: none;
+  font-size: 0.75rem;
+  color: darkred;
+  background-color: #ccbbbb;
+  width: fit-content;
+  padding: 0 0.3rem;
+}
+
+.required-popup::after {
+  content: "*Requerido";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #dfdfdf;
+  font-size: 0.65rem;
+  padding: 0.2rem 0.3rem;
+  width: auto;
+  display: block;
+  background-color: #202020;
+}
+
+.error {
+  border: solid 2px #992020;
+  background-color: #ccbbbb;
+  color: #662020;
+}
+
+.correct {
+  background-color: #bbccbb;
+  border: solid 2px #206620;
+  color: #206620;
+}
+
+.visible {
+  display: block;
+}
+
+.window-popup {
+  position: fixed;
+  top: 5vh;
+  left: 50vw;
+  border-radius: 1vh;
+  transform: translateX(-50%);
+  width: 30vw;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  display: none;
+  align-items: center;
+  text-align: left;
+  z-index: 999;
+}
+
+.window-popup::before {
+  width: auto; /* Ajuste conforme necessário */
+  height: auto; /* Ajuste conforme necessário */
+  margin-right: 0.5rem; /* Espaço entre a imagem e o texto */
+}
+
+.error-popup::before {
+  content: url('../img/mensagem-de-erro-64.png');
+}
+
+.error-popup {
+  background-color: #ff9999; /* Tons de vermelho */
+}
+
+.success-popup {
+  background-color: #66cc66; /* Tons de verde */
+}
+
+.success-popup::before {
+  content: url('../img/mensagem-de-sucesso-64.png'); 
+}
