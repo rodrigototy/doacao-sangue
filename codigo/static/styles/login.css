@@ -1,0 +1,107 @@
+#body-login {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+  width: 360px;
+  padding: 40px 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  margin: 7% auto;
+}
+
+.blood-drop-icon {
+  font-size: 40px;
+  color: #e74c3c;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h2 {
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.password-input {
+  width: 100%;
+  padding-right: 60px; /* Espaço para o botão "Exibir" */
+}
+
+.toggle-password {
+  position: absolute;
+  cursor: pointer;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff; /* Cor de fundo do botão */
+  border: none; /* Sem borda */
+  padding: 0 10px; /* Espaçamento interno do botão */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: 1px solid #e74c3c;
+}
+
+button {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #d43d2e;
+  transform: scale(1.05);
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 15px;
+  color: #888;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.forgot-password:hover {
+  color: #666;
+}

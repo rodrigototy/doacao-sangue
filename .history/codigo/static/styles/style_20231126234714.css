@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: /* 1px solid black;  */
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border: 2px solid black;
+  height: 100px;
+  background-color: rgb(240, 129, 129);
+  color: #fff;
+  text-align: center;
+}
+
+footer #heart-rodape {
+  background-color: rgb(240, 129, 129);
+  border: none;
+  height: 50px;
+}
+
+header {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border: 2px solid black;
+  height: 100px;
+  background-color: rgb(240, 129, 129);
+  color: #fff;
+  text-align: center;
+}
+
+#titulo-cabecalho {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.item-menu {
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}

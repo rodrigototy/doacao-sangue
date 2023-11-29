@@ -1,0 +1,122 @@
+/* styleListar.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    background-color: #d9d9d9;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.form-title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+    text-align: center;
+}
+
+.form-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: ;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.filter-container{
+    display: flex;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        margin-top: 10px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 620px) {
+    .logo {
+        display: none;
+    }
+}

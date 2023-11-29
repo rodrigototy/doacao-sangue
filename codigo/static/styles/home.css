@@ -1,0 +1,182 @@
+body {
+  background-color: white;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: rgba(5, 5, 134, 0.699);
+}
+
+h1 {
+  background-color: rgb(129, 186, 240);
+  margin: 4px;
+  padding: 20px;
+  border: solid blue;
+  color: blue;
+  text-align: center;
+}
+
+h3 {
+  margin: auto;
+  padding: auto;
+}
+
+.img1 {
+  width: 721px;
+  height: 238px;
+  border: 2px solid green;
+  margin-left: 3px;
+}
+
+.img2 {
+  width: 290px;
+  height: 238px;
+  border: 2px solid green;
+  margin-left: 5px;
+}
+
+.img3 {
+  width: 540px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.img4 {
+  width: 720px;
+  height: 500px;
+}
+
+.img6 {
+  float: right;
+  display: block;
+  border: 2px solid green;
+  width: 525px;
+  height: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+}
+
+.img7 {
+  border: 2px solid green;
+  width: 1250px;
+  height: 490px;
+  margin-left: 3px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  border: 2px solid green;
+  margin: auto;
+}
+
+header ol {
+  display: flex;
+  gap: 2rem;
+  margin: auto;
+}
+
+aside {
+  float: right;
+  border: 2px solid #212121;
+}
+
+#posts {
+  max-width: 720px;
+}
+
+.post {
+  border: 2px solid green;
+  padding: 0 0.5rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="submit"] {
+  background-color: rgb(129, 186, 240);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: darkgreen;
+}
+
+.telefone label {
+  float: right;
+  display: block;
+  border: 2px solid green;
+  background-color: white;
+  margin-right: 5px;
+}
+
+.telefone1 label {
+  display: block;
+
+  text-align: right;
+  padding: 5px;
+}
+
+.form2 {
+  display: block;
+  border: 2px solid green;
+  text-align: right;
+  padding: 5px;
+}
+
+.paragrafo1 {
+  display: block;
+  border: 2px solid green;
+  text-align: left;
+  padding: 5px;
+}
+
+.estoque {
+  display: block;
+
+  text-align: left;
+  padding: 5px;
+}
+
+body {
+  background-color: rgb(198, 235, 198);
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: rgba(5, 5, 134, 0.699);
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 599px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .img1 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 48px;
+  }
+}

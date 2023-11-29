@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Endereço</title>
+</head>
+<body>
+  <h1>Consulta de Endereço</h1>
+
+  <label for="cepInput">Informe o CEP:</label>
+  <input type="text" id="cepInput" />
+  <button onclick="CarregaEnderecoPeloCEP()">Consultar</button>
+
+  <h2>Resultado:</h2>
+  <ul id="enderecoResult"></ul>
+
+  <script>
+    async function CarregaEnderecoPeloCEP() {
+      const cepInput = document.getElementById('cepInput').value;
+      const enderecoResult = document.getElementById('enderecoResult');
+      enderecoResult.innerHTML = ''; // Limpar resultados anteriores
+
+      const apiUrl = `https://brasilapi.com.br/api/cep/v1/${cepInput}`;
+
+      try {
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+
+        if (response.ok) {
+          const addressData = {
+            cep: data.cep || cepInput,
+            street: data.street || null,
+            neighborhood: data.neighborhood || null,
+            city: data.city || null,
+            state: data.state || null
+          };
+
+          // Exibir resultados
+          for (const key in addressData) {
+            const listItem = document.createElement('li');
+            listItem.textContent = `${key}: ${addressData[key]}`;
+            enderecoResult.appendChild(listItem);
+          }
+        } else {
+          // Tratar erro na resposta da API
+          console.error('Erro na requisição:', data.message);
+          alert('Erro na consulta do CEP. Verifique se o CEP é válido.');
+        }
+      } catch (error) {
+        console.error('Erro na requisição:', error);
+        alert('Erro na consulta do CEP. Verifique sua conexão.');
+      }
+    }
+  </script>
+</body>
+</html>
